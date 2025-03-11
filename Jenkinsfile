@@ -19,14 +19,6 @@ pipeline {
             }
         }
 
-        stage('Cleaning and Creating Directory') {
-            steps {
-                sh 'sudo rm -rf ${REMOTE_DIR}' // Clean old files
-                sh 'sudo mkdir -p ${REMOTE_DIR}'
-                sh 'sudo chmod 755 ${REMOTE_DIR}'
-            }
-        }
-
         stage('Deploy to Remote Server') {
             steps {
                 echo 'Deploying files to remote server...'
