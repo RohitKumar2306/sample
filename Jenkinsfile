@@ -5,8 +5,7 @@ pipeline {
         GIT_REPO = 'https://github.com/RohitKumar2306/sample.git'
         GIT_BRANCH = 'main'  // Change this to your default branch if needed
         REMOTE_DIR = '/home/rohitkumar/Deployments'
-        REMOTE_SERVER = '192.168.0.17'
-        //REMOTE_SERVER = 'RemoteSession' // Name as configured in Publish over SSH
+        REMOTE_SERVER = 'RemoteSession' // Name as configured in Publish over SSH
     }
 
     stages {
