@@ -27,8 +27,6 @@ pipeline {
                                 sshTransfer(
                                     sourceFiles: '**/*', // Transfers all files in the workspace
                                     removePrefix: '',
-                                    execCommand: 'rm -r ${REMOTE_DIR}'
-                                    execCommand: 'mkdir ${REMOTE_DIR}'
                                     remoteDirectory: "${REMOTE_DIR}",
                                     execCommand: 'ls -l ${REMOTE_DIR}'
                                 )
